@@ -1,7 +1,8 @@
 # VPN環境搭建
 爲實現簡單易懂，在此推薦不同影片綜合學習 https://youtu.be/jeXPVqz4OEs https://youtu.be/Ka5_ZrSX5Ms?si=6EWSzcPYk_b_jdMK 
 https://youtu.be/9iClv5GwPIA?si=gUOSe7zE3DWPaojn https://youtu.be/I7B23tqyBzQ?si=WJGRC9aAQNTDsg2x 
-1.準備伺服器 Vultr服务器注册：https://www.vultr.com/?ref=8753714，有谷歌賬戶者可以直接選擇谷歌登錄
+1.準備伺服器 Vultr服务器注册：https://www.vultr.com/?ref=8753714
+有谷歌賬戶者可以直接選擇谷歌登錄
 2.下载搭建工具 下載FinalShell Windows版 https://kjfx.lanzoui.com/iqm6Uosbzha 
 3.儅按照視頻内容完成連接伺服器之後，我們需要進行伺服器運行環境搭建
 # Hysteria 2的運行環境搭建 https://youtu.be/jeXPVqz4OEs 
@@ -23,4 +24,4 @@ iptables -I INPUT -p tcp --dport 443 -j ACCEPT
 iptables -I INPUT -p tcp --dport 54321 -j ACCEPT
 x-ui 管理面板设置
 添加证书和密钥路径，重启面板
-這時我們已經完成了xui的環境搭建（下一步是通过域名访问x-ui 管理面板：https://你的域名:54321，對你的伺服器進行下一步管理，可添加不同協議。。。）
+這時我們已經完成了xui的環境搭建（下一步是通过域名访问x-ui 管理面板：https://你的域名:54321 對你的伺服器進行下一步管理，可添加不同協議。。。）
