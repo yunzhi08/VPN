@@ -22,6 +22,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
 放行端口
 iptables -I INPUT -p tcp --dport 443 -j ACCEPT
 iptables -I INPUT -p tcp --dport 54321 -j ACCEPT
+如果你的面板打不開，百分百是你的放行端口出現了問題！
 x-ui 管理面板设置
 添加证书和密钥路径，重启面板
 這時我們已經完成了xui的環境搭建（下一步是通过域名访问x-ui 管理面板：https://你的域名:54321 對你的伺服器進行下一步管理，可添加不同協議。。。）
